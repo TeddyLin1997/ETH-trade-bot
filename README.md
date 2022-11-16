@@ -18,5 +18,5 @@
 - 1. Cron scheule排程
 - 2. 觸發function tradeETH 
 - 3. 打Johnny API查詢方向 多/空
-- 4. 發送Binance API調整方向 [文檔連結](https://binance-docs.github.io/apidocs/spot/en/#new-order-trade)
+- 4. 發送Binance API調整方向
 

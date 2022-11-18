@@ -1,15 +1,17 @@
-import { getTelegramMessages } from './telegram.js'
-import { getSide } from './get-side.js'
+// import { getTelegramMessages } from './telegram.js'
+// import { getSide } from './get-side.js'
 import { binanceSpotMarketOrder } from './binance.js'
 
 export const tradeETH = async (request, response) => {
-  console.log('*********START*********')
-  console.log('')
+  // console.log('*********START*********')
+  // console.log('')
 
-  const messages = await getTelegramMessages()
-  const side = getSide(messages)
-  // await binanceSpotMarketOrder(side)  
-  await binanceSpotMarketOrder('NONE')  
+  console.log(request.query.side)
+
+  // const messages = await getTelegramMessages()
+  // const side = getSide(messages)
+  const side = request.query.side || 'NONE'
+  await binanceSpotMarketOrder(side)
 
   console.log('')
   console.log('*********FINISH*********')

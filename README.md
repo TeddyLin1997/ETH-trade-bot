@@ -6,6 +6,8 @@
 [Cloud Function](https://cloud.google.com/functions/docs/running/function-frameworks)
 [Binance API](https://binance-docs.github.io/apidocs/spot/en/#new-order-trade)
 
+https://asia-east1-trade-robot-1.cloudfunctions.net/trade-eth
+
 步驟
 - 1. Cron scheule排程
 - 2. 觸發function tradeETH

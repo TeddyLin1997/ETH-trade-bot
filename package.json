@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "type": "module",
   "scripts": {
-    "start": "npx functions-framework --target=tradeETH --signature-type=http"
+    "start": "npx functions-framework --target=tradeETH --signature-type=http",
+    "deploy": "gcloud functions deploy tradeETH --runtime nodejs16 --trigger-http --project trade-robot-1 --region asia-east1"
   },
   "author": "",
   "license": "ISC",

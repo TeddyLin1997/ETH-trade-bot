@@ -70,5 +70,5 @@ const getPositionAmount = (position) => Number(position?.positionAmt) || 0
 // test
 // binanceSpotMarketOrder('NONE')
 // binanceSpotMarketOrder('SELL')
-binanceSpotMarketOrder('BUY')
+// binanceSpotMarketOrder('BUY')
 

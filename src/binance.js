@@ -1,11 +1,9 @@
 import Binance from 'node-binance-api'
-
-const apiKey = 'fPQVDg1dK512ixTn7vpKObYwTEfdscxWeKd9lVkJ1ss0yFSucq1gSU1qfwNlXVg3'
-const apiSecret = 'o7ynpf9eUssl2YfiGDqC7rjIziDSDhiSsyCgtd9Pz4QAcozJYom03dJ3zbXUJ3F2'
+import { BINANCE_API_KEY, BINANCE_SECRET_Key } from './config'
 
 const binance = new Binance().options({
-  APIKEY: apiKey,
-  APISECRET: apiSecret,
+  APIKEY: BINANCE_API_KEY,
+  APISECRET: BINANCE_SECRET_Key,
 })
 
 // 1. 看本金

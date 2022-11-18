@@ -1,5 +1,5 @@
 import Binance from 'node-binance-api'
-import { BINANCE_API_KEY, BINANCE_SECRET_KEY } from './config'
+import { BINANCE_API_KEY, BINANCE_SECRET_KEY } from './config.js'
 
 const binance = new Binance().options({
   APIKEY: BINANCE_API_KEY,
@@ -7,7 +7,6 @@ const binance = new Binance().options({
 })
 
 // 1. 看本金
-
 export const binanceSpotMarketOrder = async (side) => {
   console.log('Step3. Order Position: Start')
 

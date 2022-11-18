@@ -1,4 +1,4 @@
-import { TELEGRAM_API_KEY } from './config'
+import { TELEGRAM_API_KEY } from './config.js'
 import axios from 'axios'
 
 export const getTelegramMessages = async () => {

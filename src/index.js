@@ -6,11 +6,9 @@ export const tradeETH = async (request, response) => {
   console.log('*********START*********')
   console.log('')
 
-  console.log(request.query.side)
-
   // const messages = await getTelegramMessages()
   // const side = getSide(messages)
-  const side = request.query.side || 'NONE'
+  const side = request?.query?.side || 'NONE'
   await binanceSpotMarketOrder(side)
 
   console.log('')

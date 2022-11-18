@@ -12,6 +12,7 @@
 # below:
 .git
 .gitignore
+.env
 
 node_modules
 #!include:.gitignore

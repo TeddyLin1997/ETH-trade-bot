@@ -1,9 +1,10 @@
+import { TELEGRAM_API_KEY } from './config'
 import axios from 'axios'
 
 export const getTelegramMessages = async () => {
   console.log('Step1. Telegram message: Start')
 
-  const url = 'https://api.telegram.org/bot5628574569:AAGMRFybrxAUrqyZCasAOKFjE_yQtBaxyPo/getupdates?offset=-100'
+  const url = `https://api.telegram.org/bot${TELEGRAM_API_KEY}/getupdates?offset=-100`
 
   const newMessageList = await axios(url)
     .then(res => res.data.result)

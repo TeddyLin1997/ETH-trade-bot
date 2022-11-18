@@ -3,8 +3,8 @@
 import { binanceSpotMarketOrder } from './binance.js'
 
 export const tradeETH = async (request, response) => {
-  // console.log('*********START*********')
-  // console.log('')
+  console.log('*********START*********')
+  console.log('')
 
   console.log(request.query.side)
 

@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "npx functions-framework --target=tradeETH --signature-type=http",
-    "deploy": "gcloud functions deploy tradeETH --region asia-east1 --runtime nodejs16 --trigger-http --project trade-robot-1"
+    "deploy": "gcloud functions deploy tradeETH --region asia-east1 --runtime nodejs16 --trigger-http --project trade-robot-1 --env-vars-file .env.yaml"
   },
   "author": "",
   "license": "ISC",

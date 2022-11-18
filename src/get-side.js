@@ -10,6 +10,5 @@ export const getSide = (messages) => {
   })
 
   console.log('......Finish')
-  console.log('')
   return side //BUY | SELL | NONE
 }

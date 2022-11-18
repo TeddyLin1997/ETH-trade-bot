@@ -33,7 +33,6 @@ export const binanceSpotMarketOrder = async (side) => {
   const res = await apiMap[side]('ETHBUSD', quantity) // symbol, amount, price, params
 
   console.log(`Result: ${res?.msg || 'Order success!!'}`)
-  console.log('')
   return true
 }
 

@@ -17,6 +17,5 @@ export const getTelegramMessages = async () => {
 
     
   console.log('......Finish')
-  console.log('')
   return sortedMessageList
 }

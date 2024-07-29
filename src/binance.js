@@ -2,8 +2,8 @@ import Binance from 'node-binance-api'
 import { BINANCE_API_KEY, BINANCE_SECRET_KEY } from './config.js'
 
 const binance = new Binance().options({
-  APIKEY: 't0qlYlaaHovafqDlPaUf9bT0mMRa6wejHoV6f9JEQs3yI5gKeDEuh4L8zOMpW6vH',
-  APISECRET: 'Vhv0rDUOUsTvJruNXRnwdOvgYYi44zqKaZT1mB32YRWlWdCL3PaLT8iTuYAPYXKX',
+  APIKEY: BINANCE_API_KEY,
+  APISECRET: BINANCE_SECRET_KEY,
 })
 
 export const binanceSpotMarketOrder = async (side) => {

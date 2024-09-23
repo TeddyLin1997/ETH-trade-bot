@@ -1,3 +1,5 @@
+![](http://estruyf-github.azurewebsites.net/api/VisitorHit?user=TeddyLin1997&repo=ETH-trade-bot&countColorcountColor&countColor=%2309A582)
+
 # Binance-ETH
 
 - [Cron Schedule](https://cloud.google.com/scheduler)
